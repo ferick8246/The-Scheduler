@@ -207,3 +207,37 @@ function threePM() {
     output_div7.textContent = input_textarea7.value;
   }
 }
+function fourPM() {
+  var input_textarea8 = document.querySelector("#4pmslot");
+  var output_div8 = document.querySelector("#4pmslot");
+  var save_button8 = document.querySelector("#4pmslot");
+
+  save_button8.addEventListener("click", updateOutput8);
+
+  output_div8.textContent = localStorage.getItem("content8");
+  input_textarea8.value = localStorage.getItem("content8");
+
+  function updateOutput8() {
+    localStorage.setItem("content8", input_textarea8.value);
+
+    output_div8.textContent = input_textarea8.value;
+  }
+}
+
+
+function fivePM() {
+  var input_textarea9 = document.querySelector("#5pmslot");
+  var output_div9 = document.querySelector("#5pmslot");
+  var save_button9 = document.querySelector("#button5pm");
+
+  save_button9.addEventListener("click", updateOutput9);
+
+  output_div9.textContent = localStorage.getItem("content9");
+  input_textarea9.value = localStorage.getItem("content9");
+
+  function updateOutput9() {
+    localStorage.setItem("content9", input_textarea9.value);
+
+    output_div9.textContent = input_textarea9.value;
+  }
+}
