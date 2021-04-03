@@ -9,7 +9,7 @@ html {
   font-size: 18px;
   color: #e01693;
 }
-/* Jumbotron */
+
 h1,
 p.lead {
   font-family: 'Poppins', sans-serif;
@@ -28,7 +28,7 @@ p#currentDay.lead {
   white-space: pre-wrap;
 }
 
-/* Calendar */
+
 .textarea {
   background: transparent;
   resize: none;
@@ -41,7 +41,7 @@ p#currentDay.lead {
   padding-bottom: 10px;
 }
 .hour {
-  background-color: #fff;
+  background-color: rgb(17, 131, 146);
   font-weight: bold;
   height: 79px;
   color: #1f1f1f;
