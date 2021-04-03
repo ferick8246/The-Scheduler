@@ -5,20 +5,20 @@ body {
 }
 
 textarea {
-  background: transparent;
+  background: rgb(230, 95, 95);
   border: none;
   resize: none;
-  color: #000000;
-  border-left: 1px solid black;
+  color: #16bacf;
+  border-left: 1px solid rgb(15, 141, 47);
   padding: 10px;
 }
 
 .jumbotron {
   text-align: center;
   background-color: transparent;
-  color: black;
+  color: rgb(212, 20, 186);
   border-radius: 0;
-  border-bottom: 10px solid black;
+  border-bottom: 10px solid rgb(230, 95, 95);
 }
 
 .description {
@@ -33,7 +33,7 @@ textarea {
 .row {
   white-space: pre-wrap;
   height: 80px;
-  border-top: 1px solid white;
+  border-top: 1px solid rgb(49, 187, 221);
 }
 
 .hour {
