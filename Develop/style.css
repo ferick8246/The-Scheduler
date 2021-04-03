@@ -41,7 +41,7 @@ p#currentDay.lead {
   padding-bottom: 10px;
 }
 .hour {
-  background-color: rgb(17, 131, 146);
+  background-color: #fff;
   font-weight: bold;
   height: 79px;
   color: #1f1f1f;
