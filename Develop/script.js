@@ -138,3 +138,72 @@ function elevenAM() {
     output_div3.textContent = input_textarea3.value;
   }
 }
+
+function twelvePM() {
+  var input_textarea4 = document.querySelector("#12pmslot");
+  var output_div4 = document.querySelector("#12pmslot");
+  var save_button4 = document.querySelector("#button12pm");
+
+  save_button4.addEventListener("click", updateOutput4);
+
+  output_div4.textContent = localStorage.getItem("content4");
+  input_textarea4.value = localStorage.getItem("content4");
+
+  function updateOutput4() {
+    localStorage.setItem("content4", input_textarea4.value);
+
+    output_div4.textContent = input_textarea4.value;
+  }
+}
+
+
+function onePM() {
+  var input_textarea5 = document.querySelector("#1pmslot");
+  var output_div5 = document.querySelector("#1pmslot");
+  var save_button5 = document.querySelector("#button1pm");
+
+  save_button5.addEventListener("click", updateOutput5);
+
+  output_div5.textContent = localStorage.getItem("content5");
+  input_textarea5.value = localStorage.getItem("content5");
+
+  function updateOutput5() {
+    localStorage.setItem("content5", input_textarea5.value);
+
+    output_div5.textContent = input_textarea5.value;
+  }
+}
+function twoPM() {
+  var input_textarea6 = document.querySelector("#2pmslot");
+  var output_div6 = document.querySelector("#2pmslot");
+  var save_button6 = document.querySelector("#button2pm");
+
+  save_button6.addEventListener("click", updateOutput6);
+
+  output_div6.textContent = localStorage.getItem("content6");
+  input_textarea6.value = localStorage.getItem("content6");
+
+  function updateOutput6() {
+    localStorage.setItem("content6", input_textarea6.value);
+
+    output_div6.textContent = input_textarea6.value;
+  }
+}
+
+
+function threePM() {
+  var input_textarea7 = document.querySelector("#3pmslot");
+  var output_div7 = document.querySelector("#3pmslot");
+  var save_button7 = document.querySelector("#button3pm");
+
+  save_button7.addEventListener("click", updateOutput7);
+
+  output_div7.textContent = localStorage.getItem("content7");
+  input_textarea7.value = localStorage.getItem("content7");
+
+  function updateOutput7() {
+    localStorage.setItem("content7", input_textarea7.value);
+
+    output_div7.textContent = input_textarea7.value;
+  }
+}
