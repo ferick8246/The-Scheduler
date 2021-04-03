@@ -6,7 +6,7 @@ body {
 
 textarea {
   background: rgb(230, 95, 95);
-  border: none;
+  border: hotpink;
   resize: none;
   color: #16bacf;
   border-left: 1px solid rgb(15, 141, 47);
