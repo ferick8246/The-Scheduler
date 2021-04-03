@@ -10,6 +10,27 @@ window.onload = function(){
   fourPM();
   fivePM();
  }
+
+ // added api to check temprature 
+ var tePescoElOllo = 'https://api.openweathermap.org/data/2.5/weather?q=houston&units=imperial&appid=4354bae4bc4f80de34b0ce15453d2200';
+
+var responseText = document.getElementById('response-text');
+
+function getApi(requestUrl) {
+  fetch(requestUrl)
+    .then(function (response) {
+      
+     return response.json()
+      
+    })
+    .then(function (data) {
+      console.log(data);
+      console.log(data.main.temp)
+      document.querySelector("#temp").innerHTML= "temp "+ data.main.temp + "&#8457;"
+    });
+}
+
+getApi(tePescoElOllo);
   
  //view current time 
 
