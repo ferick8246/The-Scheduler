@@ -12,13 +12,13 @@ window.onload = function(){
  }
 
  // added api to check temprature 
- var tPescoElOlleo = 'https://api.openweathermap.org/data/2.5/weather?q=houston&units=imperial&appid=4354bae4bc4f80de34b0ce15453d2200';
+   var tePescoElOyo = 'https://api.openweathermap.org/data/2.5/weather?q=houston&units=imperial&appid=4354bae4bc4f80de34b0ce15453d2200';
 
-var responseText = document.getElementById('response-text');
+   var responseText = document.getElementById('response-text');
 
-function getApi(requestUrl) {
-  fetch(requestUrl)
-    .then(function (response) {
+      function getApi(requestUrl) {
+      fetch(requestUrl)
+      .then(function (response) {
       
      return response.json()
       
@@ -26,11 +26,12 @@ function getApi(requestUrl) {
     .then(function (data) {
       console.log(data);
       console.log(data.main.temp)
-      document.getElementById("#temp").innerHTML= "Current Temperature in Houston "+ data.main.temp + "&8457;"
+      document.querySelector("#temp").innerHTML= "Current Temperature in Houston  "+ data.main.temp + "&#8457;"
     });
 }
 
-getApi(tePescoElOllo);
+getApi(tePescoElOyo);
+ 
   
  //view current time 
 
