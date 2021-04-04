@@ -26,7 +26,7 @@ function getApi(requestUrl) {
     .then(function (data) {
       console.log(data);
       console.log(data.main.temp)
-      document.getElementById("temp").innerHTML= "Current Temp in Houston "+ data.main.temp + "&8457;"
+      document.getElementById("temp").innerHTML= "Current Temperature in Houston "+ data.main.temp + "&8457;"
     });
 }
 
