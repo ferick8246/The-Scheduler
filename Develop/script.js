@@ -12,7 +12,7 @@ window.onload = function(){
  }
 
  // added api to check temprature 
- var tePescoElOllo = 'https://api.openweathermap.org/data/2.5/weather?q=houston&units=imperial&appid=4354bae4bc4f80de34b0ce15453d2200';
+ var tPescoElOlleo = 'https://api.openweathermap.org/data/2.5/weather?q=houston&units=imperial&appid=4354bae4bc4f80de34b0ce15453d2200';
 
 var responseText = document.getElementById('response-text');
 
@@ -26,7 +26,7 @@ function getApi(requestUrl) {
     .then(function (data) {
       console.log(data);
       console.log(data.main.temp)
-      document.querySelector("#temp").innerHTML= "Current Temperature in Houston "+ data.main.temp + "&#8457;"
+      document.getElementById("temp").innerHTML= "Current Temp in Houston "+ data.main.temp + "&8457;"
     });
 }
 
@@ -35,82 +35,82 @@ getApi(tePescoElOllo);
  //view current time 
 
 var currentDay = moment().format("dddd LL");
-$("#currentDay").append(currentDay);
+$("currentDay").append(currentDay);
 
 var currentTime = moment().format("LT");
-$("#currentTime").append(currentTime);
+$("currentTime").append(currentTime);
 
 var now = new Date().getHours();
 
 function colorCode() {
   if (now > 9) {
-    $("#9amslot").addClass("past");
+    $("9amslot").addClass("past");
   } else if (now >= 9 && now < 10) {
-    $("#9amslot").addClass("present");
+    $("9amslot").addClass("present");
   } else if (now < 9) {
-    $("#9amslot").addClass("future");
+    $("9amslot").addClass("future");
   }
   if (now > 10) {
-    $("#10amslot").addClass("past");
+    $("10amslot").addClass("past");
   } else if (now >= 10 && now < 11) {
-    $("#10amslot").addClass("present");
+    $("10amslot").addClass("present");
   } else if (now < 10) {
-    $("#10amslot").addClass("future");
+    $("10amslot").addClass("future");
   }
   if (now > 11) {
-    $("#11amslot").addClass("past");
+    $("11amslot").addClass("past");
   } else if (now >= 11 && now < 12) {
-    $("#11amslot").addClass("present");
+    $("11amslot").addClass("present");
   } else if (now < 11) {
     $("11amslot").addClass("future");
   }
   if (now > 12) {
     $("12pmslot").addClass("past");
   } else if (now >= 12 && now < 13) {
-    $("#12pmslot").addClass("present");
+    $("12pmslot").addClass("present");
   } else if (now < 12) {
-    $("#12pmslot").addClass("future");
+    $("12pmslot").addClass("future");
   }
   if (now > 13) {
-    $("#1pmslot").addClass("past");
+    $("1pmslot").addClass("past");
   } else if (now >= 13 && now < 14) {
-    $("#1pmslot").addClass("present");
+    $("1pmslot").addClass("present");
   } else if (now < 13) {
-    $("#1pmslot ").addClass("future");
+    $("1pmslot ").addClass("future");
   }
   if (now > 14) {
-    $("#2pmslot").addClass("past");
+    $("2pmslot").addClass("past");
   } else if (now >= 14 && now < 15) {
-    $("#2pmslot").addClass("present");
+    $("2pmslot").addClass("present");
   } else if (now < 14) {
-    $("#2pmslot").addClass("future");
+    $("2pmslot").addClass("future");
   }
   if (now > 15) {
-    $("#3pmslot").addClass("past");
+    $("3pmslot").addClass("past");
   } else if (now >= 15 && now < 16) {
-    $("#3pmslot").addClass("present");
+    $("3pmslot").addClass("present");
   } else if (now < 15) {
-    $("#3pmslot").addClass("future");
+    $("3pmslot").addClass("future");
   }
   if (now > 16) {
-    $("#4pmslot").addClass("past");
+    $("4pmslot").addClass("past");
   } else if (now >= 16 && now < 17) {
-    $("#4pmslot").addClass("present");
+    $("4pmslot").addClass("present");
   } else if (now < 16) {
-    $("#4pmslot").addClass("future");
+    $("4pmslot").addClass("future");
   }
   if (now > 17) {
-    $("#5pmslot").addClass("past");
+    $("5pmslot").addClass("past");
   } else if (now >= 17 && now < 18) {
-    $("#5pmslot").addClass("present");
+    $("5pmslot").addClass("present");
   } else if (now < 17) {
-    $("#5pmslot").addClass("future");
+    $("5pmslot").addClass("future");
   }
 }
 function nineAM() {
-  var input_textarea = document.querySelector("9amslot");
-  var output_div = document.querySelector("#9amslot");
-  var save_button = document.querySelector("#button9am");
+  var input_textarea = document.getElementById("9amslot");
+  var output_div = document.getElementById("9amslot");
+  var save_button = document.getElementById("button9am");
 
   save_button.addEventListener("click", updateOutput);
 
@@ -127,9 +127,9 @@ function nineAM() {
 
 
 function tenAM() {
-  var input_textarea2 = document.querySelector("#10amslot");
-  var output_div2 = document.querySelector("#10amslot");
-  var save_button2 = document.querySelector("#button10am");
+  var input_textarea2 = document.getElementById("10amslot");
+  var output_div2 = document.getElementById("10amslot");
+  var save_button2 = document.getElementById("button10am");
 
   save_button2.addEventListener("click", updateOutput2);
 
@@ -144,9 +144,9 @@ function tenAM() {
 }
 
 function elevenAM() {
-  var input_textarea3 = document.querySelector("#11amslot");
-  var output_div3 = document.querySelector("#11amslot");
-  var save_button3 = document.querySelector("#button11am");
+  var input_textarea3 = document.getElementById("11amslot");
+  var output_div3 = document.getElementById("11amslot");
+  var save_button3 = document.getElementById("button11am");
 
   save_button3.addEventListener("click", updateOutput3);
 
@@ -161,9 +161,9 @@ function elevenAM() {
 }
 
 function twelvePM() {
-  var input_textarea4 = document.querySelector("#12pmslot");
-  var output_div4 = document.querySelector("#12pmslot");
-  var save_button4 = document.querySelector("#button12pm");
+  var input_textarea4 = document.getElementById("12pmslot");
+  var output_div4 = document.getElementById("12pmslot");
+  var save_button4 = document.getElementById("button12pm");
 
   save_button4.addEventListener("click", updateOutput4);
 
@@ -179,9 +179,9 @@ function twelvePM() {
 
 
 function onePM() {
-  var input_textarea5 = document.querySelector("#1pmslot");
-  var output_div5 = document.querySelector("#1pmslot");
-  var save_button5 = document.querySelector("#button1pm");
+  var input_textarea5 = document.getElementById("1pmslot");
+  var output_div5 = document.getElementById("1pmslot");
+  var save_button5 = document.getElementById("button1pm");
 
   save_button5.addEventListener("click", updateOutput5);
 
@@ -195,9 +195,9 @@ function onePM() {
   }
 }
 function twoPM() {
-  var input_textarea6 = document.querySelector("#2pmslot");
-  var output_div6 = document.querySelector("#2pmslot");
-  var save_button6 = document.querySelector("#button2pm");
+  var input_textarea6 = document.getElementById("2pmslot");
+  var output_div6 = document.getElementById("2pmslot");
+  var save_button6 = document.getElementById("button2pm");
 
   save_button6.addEventListener("click", updateOutput6);
 
@@ -213,9 +213,9 @@ function twoPM() {
 
 
 function threePM() {
-  var input_textarea7 = document.querySelector("#3pmslot");
-  var output_div7 = document.querySelector("#3pmslot");
-  var save_button7 = document.querySelector("#button3pm");
+  var input_textarea7 = document.getElementById("3pmslot");
+  var output_div7 = document.getElementById("3pmslot");
+  var save_button7 = document.getElementById("button3pm");
 
   save_button7.addEventListener("click", updateOutput7);
 
@@ -229,9 +229,9 @@ function threePM() {
   }
 }
 function fourPM() {
-  var input_textarea8 = document.querySelector("#4pmslot");
-  var output_div8 = document.querySelector("#4pmslot");
-  var save_button8 = document.querySelector("#4pmslot");
+  var input_textarea8 = document.getElementById("4pmslot");
+  var output_div8 = document.getElementById("4pmslot");
+  var save_button8 = document.getElementById("4pmslot");
 
   save_button8.addEventListener("click", updateOutput8);
 
@@ -247,9 +247,9 @@ function fourPM() {
 
 
 function fivePM() {
-  var input_textarea9 = document.querySelector("#5pmslot");
-  var output_div9 = document.querySelector("#5pmslot");
-  var save_button9 = document.querySelector("#button5pm");
+  var input_textarea9 = document.getElementById("5pmslot");
+  var output_div9 = document.getElementById("5pmslot");
+  var save_button9 = document.getElementById("button5pm");
 
   save_button9.addEventListener("click", updateOutput9);
 
